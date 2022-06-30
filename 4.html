@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>스타벅스 리디자인</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+		<script src="js/3.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<style>
+		* {margin:0; padding:0; box-sizing:border-box;}
+		img {max-width:100%; }
+		#layout {	max-width:390px; margin:auto; height:844px;	position:relative; }
+		
+		::-webkit-scrollbar {
+			 width:1px; 
+		}
+		
+		header {height:58px; background:#1E3932; display:flex; align-items:flex-end; justify-content:center; position:sticky; top:0;}
+		h3 {color:white; margin-bottom:5px;}
+		
+		footer {background:#1E3932; height:58px; top:800px; bottom:0; position:sticky;  }
+		footer div { height:58px;display:flex; align-items:flex-end; justify-content:space-between; }
+		footer div a {color:white; text-decoration:none; font-size:0.8rem;}
+		span {flex:1; text-align:center; border:1px solid white; }
+		span img {width:30px; display:block; margin-left:32px; padding-top:5px;}
+		/*공통부분 */
+		
+		
+		</style>
+		
+	</head>
+	<body>
+		<div id="layout">
+			<header>
+				<h3>MENU</h3>
+			</header>
+			
+			<!--네비게이션
+			<div>
+				<nav>
+					<ul>
+						<li>
+							<a href="#" class="m">음료</a>
+							<nav class="sm">
+								<a href="#">추천</a>
+								<a href="#">커피</a>
+								<a href="#">콜드브루</a>
+								<a href="#">프라푸치노</a>
+								<a href="#">블렌디드</a>
+							</nav>							
+							<li>
+							<a href="#" class="m">디저트</a>
+							<nav class="sm">
+								<a href="#">추천</a>
+								<a href="#">커피</a>
+								<a href="#">콜드브루</a>
+								<a href="#">프라푸치노</a>
+								<a href="#">블렌디드</a>
+							</nav>
+							<a href="#" class="m">상품</a>
+							<nav class="sm">
+								<a href="#">추천</a>
+								<a href="#">커피</a>
+								<a href="#">콜드브루</a>
+								<a href="#">프라푸치노</a>
+								<a href="#">블렌디드</a>
+							</nav>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			-->
+			<main>
+				<div>
+					<img src="img/search.png" alt="search">
+				</div>
+			</main>
+			<footer>
+				<div>
+					<span><a href="3.html"><img src="img/home.png" alt="홈">HOME</a> </span>
+					<span><a href="#"><img src="img/drink.png" alt="메뉴">MENU</a></span>
+					<span><a href="#"><img src="img/auto.png" alt="주문">ORDER</a></span>
+					<span><a href="#"><img src="img/other.png" alt="더보기">OTHER</a></span>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
