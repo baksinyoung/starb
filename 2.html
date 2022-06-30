@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>스타벅스 리디자인</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+		<link rel="stylesheet" href="css/star.css">
+		
+		<style>
+		* {margin:0; padding:0; box-sizing:border-box;}
+		img {max-width:100%; }
+		#layout {	max-width:390px; margin:auto; background:#1E3932; height:844px;	position:relative; background-image:url("../img/login.jpg")}
+		
+		::-webkit-scrollbar {
+			 width:1px; 
+		}
+		
+		header {text-align:center; padding-top:68px;}
+		header img {width:96px;}
+		
+		#login {justify-content:center; padding:50px 0; display:flex; align-items:center;}
+		#login hr {width:80px; background:none; border:none; border-top: 1px dashed black;}
+		#login h4 {margin:0 10px; font-weight:bold;}
+		
+		form { text-align:center;}
+		form input {font-size:0.9rem; padding:10px 10px; margin:8px;}
+		form input:last-child {background:#1E3932; color:white; border:none; width:270px; padding:10px 0; font-weight:bold;}
+		
+		#log {display:flex; justify-content:space-around; margin:10px 100px 40px 100px;}
+		#log a {background:#1E3932; border-radius:50%; width:30px; height:30px;}
+		#log img { padding-top:5px; width:60%;}
+		p {font-size:0.7rem; font-weight:bold; margin-top:20px;}
+		</style>
+		
+	</head>
+	<body>
+		<div id="layout">
+			<header>
+				<img src="../img/logo.png">
+			</header>
+			<main>  
+				<div id="login">
+					<hr><h4>로그인</h4><hr>
+				</div>	
+			</main>
+			<section>
+				<form action="3.html">
+					<input type="text" id="fname" name="fname" placeholder="id"><br>
+					<input type="text" id="lname" name="lname" placeholder="passward"><br><br>
+					
+					<p>간편로그인</p>
+					<div id="log">
+						<a><img src="../img/kaka.png"></a>
+						<a><img src="../img/f.png"></a>
+						<a><img src="../img/in.png"></a>
+					</div>
+					
+					<input type="submit" value="확인" >
+				</form>
+			</section>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>스타벅스 리디자인</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+		<script src="js/3.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<style>
+		* {margin:0; padding:0; box-sizing:border-box;}
+		img {max-width:100%; }
+		#layout {	max-width:390px; margin:auto; height:844px;	position:relative; }
+		
+		::-webkit-scrollbar {
+			 width:1px; 
+		}
+		
+		header {height:58px; background:#1E3932; display:flex; align-items:flex-end; justify-content:center; position:sticky; top:0;}
+		h3 {color:white; margin-bottom:5px;}
+		
+		footer {background:#1E3932; height:58px; top:800px; bottom:0; position:sticky;  }
+		footer div { height:58px;display:flex; align-items:flex-end; justify-content:space-between; }
+		footer div a {color:white; text-decoration:none; font-size:0.8rem;}
+		span {flex:1; text-align:center; border:1px solid white; }
+		span img {width:30px; display:block; margin-left:32px; padding-top:5px;}
+		/*공통부분 */
+		
+		/*슬라이드 390*240 */  
+		#slide_div {width:390px; overflow:hidden; height:240px; margin:auto; text-align:center; padding-top:10px; }
+		#slide_div h2 {display:none;}
+		#slide_div section {position:relative;}
+		
+		
+		
+		#slide {
+		width:2340px; height:209px; display:flex; 
+		position:relative; align-items:center; justify-content:center;  left:-390px;  /* position을 설정해야 움직인다.*/ 
+		}
+		
+		#slide img {		
+		height:209px; width:390px;
+		border-left:40px solid white;
+		border-right:40px solid white;
+		}
+		
+		#circle {
+			position:absolute;
+			 left:40%; 
+		}
+
+		#circle button {
+				width:10px; height:10px; border-radius:50%;
+				background:#ddd; cursor:pointer; border:none;
+		}
+
+		#circle button.orange {background:#1E3932;;}
+		
+		.sec { width:80%; margin:auto; padding-top:10px; padding-bottom:10px;}
+		.sec p {font-size:13px; font-weight:bold;}
+		.new {
+			display:flex;			
+		}
+		.new>div {
+			text-align:center; margin:auto; 
+			flex:1;
+		}
+		.new img {width:37%; }
+		
+		.new>div a {background:#1E3932; display:block; border-radius:50%; width:88px; height:88px;
+		padding-top:5%; margin:10%;
+		}
+		
+		.new p{font-size:11px; margin-top:10px;}
+		
+		
+		aside {background:#f1f0eb;}
+		aside>div {
+		 width:80%; margin:auto; text-align:center; padding-top:10px;
+		}
+		aside>div h5 {font-size:13px; text-align:left;}
+		aside img {width:30%;}
+		</style>
+		
+	</head>
+	<body>
+		<div id="layout">
+			<header>
+				<h3>HOME</h3>
+			</header>
+			
+			<div id="slide_div">				
+				<section>	
+						<h2>slide</h2>				
+					<div id="slide">
+						<a href="#"><img src="../img/banel.jpg" alt="0"></a>
+						<a href="#"><img src="../img/banel.jpg" alt="1"></a>
+						<a href="#"><img src="../img/banel.jpg" alt="2"></a>
+						<a href="#"><img src="../img/banel.jpg" alt="3"></a>
+						<a href="#"><img src="../img/banel.jpg" alt="4"></a>
+						<a href="#"><img src="../img/banel.jpg" alt="0"></a>
+					</div>
+					
+					<div id="circle">
+						<button type="button" class="orange"></button>
+						<button type="button"></button>
+						<button type="button"></button>
+						<button type="button"></button>
+						<button type="button"></button>
+					</div>
+				</section>
+			</div>
+			<section class="sec">
+				<h5>2022 신상 음료</h5>
+				<div class="new">
+					<div>
+						<a href=""><img src="../img/red.png" alt="음료"></a>
+						<p>레드파워 스매시<br>블렌디드</p>
+					</div>
+					<div>
+					<a href=""><img src="../img/purple.png" alt="음료"></a>
+					<p>퍼플 샤워<br>블렌디드</p>
+					</div>
+					<div>
+					<a href=""><img src="../img/green.png" alt="음료"></a>
+					<p>커피 드로잉 말차<br>프라푸치노</p>
+					</div>
+				</div>
+			</section>	
+			<aside>
+				<div>	
+					<h5>바콸리님의 🎁 리워드</h5>
+					<img src="../img/reward.JPG" alt="reward">
+				</div>	
+			</aside>
+			<section class="sec">
+				<h5>BEST 인기 음료</h5>
+				<div class="new">
+					<div>
+						<a href=""><img src="../img/aa.png" alt="음료"></a>
+						<p>아이스<br>아메리카노</p>
+					</div>
+					<div>
+					<a href=""><img src="../img/banil.png" alt="음료"></a>
+					<p>바닐라 크림<br>콜드브루</p>
+					</div>
+					<div>
+					<a href=""><img src="../img/dol.png" alt="음료"></a>
+					<p>아이스 스타벅스<br>돌체라떼</p>
+					</div>
+				</div>
+			</section>	
+			<footer>
+				<div>
+					<span><a href="#"><img src="../img/home.png" alt="홈">HOME</a> </span>
+					<span><a href="#"><img src="../img/drink.png" alt="메뉴">MENU</a></span>
+					<span><a href="#"><img src="../img/auto.png" alt="주문">ORDER</a></span>
+					<span><a href="#"><img src="../img/other.png" alt="더보기">OTHER</a></span>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
