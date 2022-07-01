@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>스타벅스 리디자인</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+		<script src="js/3.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<style>
+		* {margin:0; padding:0; box-sizing:border-box;}
+		img {max-width:100%; }
+		#layout {	max-width:390px; margin:auto; height:844px;	position:relative; }
+		a {color:black; text-decoration:none;}
+		
+		::-webkit-scrollbar {
+			 width:1px; 
+		}
+		
+		header {height:58px; background:#1E3932; display:flex; align-items:flex-end; justify-content:center; position:sticky; top:0;}
+		h3 {color:white; margin-bottom:5px;}
+		
+		footer {background:#1E3932; height:58px; top:800px; bottom:0; position:sticky;  }
+		footer div { height:58px;display:flex; align-items:flex-end; justify-content:space-between; }
+		footer div a {color:white; text-decoration:none; font-size:0.8rem;}
+		span {flex:1; text-align:center; border:1px solid white; }
+		span img {width:30px; display:block; margin-left:32px; padding-top:5px;}
+		/*공통부분 */
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		ul {list-style:none; display:flex;}
+		li {flex:1; text-align:center; padding:10px 0px; border:1px solid #f1f0eb; }
+		
+	
+		
+		
+		.submenu { display:flex; height:30px; align-items:center; overflow:hidden;}
+		.submenu li {flex:1;   border:1px solid #f1f0eb;  }
+		 .submenu li a {margin-bottom:10px; font-size:0.8rem;}
+		 li:hover a {font-weight:bold;}
+		
+		
+		
+		
+		
+		.choice {background:#f1f0eb; }
+		.subcho, .subcho a {background:black; color:white;}
+		
+		
+		.sec { width:100%;margin:auto; height:175px;  }
+		.sec p {font-size:13px; font-weight:bold;}
+		.new {
+			display:flex;		width:80%; margin:auto;
+		}
+		.new>div {
+			text-align:center; margin:auto;
+			flex:1;
+		}
+		.new img {width:60%; }
+		
+		.new>div a {background:#1E3932; display:block; border-radius:50%; width:100px; height:100px;
+		padding-top:10%; margin:10%; margin-left:20%;
+		}
+		
+		.new p{font-size:11px; margin-top:10px;}
+		#second { background:#f1f0eb;}
+		
+		
+		
+		main div {
+			text-align:center; margin:10px 0;
+			display:flex; padding:20px 50px; justify-content:center;
+			}
+		main div img {
+		width:20px; display:block; margin-right:10px;}
+		#fname {border:none;}
+		#line {border:1px solid black; padding:8px; border-radius:30px; }		
+		</style>
+		
+	</head>
+	<body>
+		<div id="layout">
+			<header>
+				<h3>MENU</h3>
+			</header>
+			<div>
+				<nav>
+					<ul>
+						<li><a href="4.html">음료</a></li>
+						<li class="choice"><a href="5.html" >디저트</a></li>
+						<li><a href="#" >상품</a></li>
+					</ul>
+					<ul class="submenu">
+						<li class="subcho"><a href="5.html" >브래드</a></li>
+						<li><a href="5-1.html" >케이크</a></li>
+						<li><a href="5-2.html" >샌드위치</a></li>
+						<li><a href="5-3.html">아이스크림</a></li>
+					</ul>
+				</nav>
+			</div>
+			
+			
+			<main>
+				<div>	 
+					<div id="line">
+						<img src="img/search.png" alt="search">
+						<input type="text" id="fname" placeholder="블루베리 쿠키 케이크"></input>		
+					</div>
+				</div>
+			</main>
+			
+			<section class="sec">
+				<div class="new">
+					<div>
+						<a href=""><img src="img/cheese.png" alt="음료"></a>
+						<p>리얼 치즈<br>베이글</p>
+					</div>
+					<div>
+					<a href=""><img src="img/blue.png" alt="음료"></a>
+					<p>리얼 블루베리<br>베이글</p>
+					</div>
+					
+				</div>
+			</section>	
+			<section class="sec" id="second">
+				<div class="new">
+					<div>
+						<a href=""><img src="img/bam.png" alt="음료"></a>
+						<p>밤콩달콩<br>두유브래드</p>
+					</div>
+					<div>
+					<a href=""><img src="img/pican.png" alt="음료"></a>
+					<p>돔<br>피칸 타르트</p>
+					</div>
+					
+				</div>
+			</section>	
+			<section class="sec">
+				<div class="new">
+					<div>
+						<a href=""><img src="img/pie.png" alt="음료"></a>
+						<p>바삭바삭<br>하트 파이</p>
+					</div>
+					<div>
+					<a href=""><img src="img/scon.png" alt="음료"></a>
+					<p>녹차 마카다미아<br>스콘</p>
+					</div>
+					
+				</div>
+			</section>	
+			
+			<footer>
+				<div>
+					<span><a href="3.html"><img src="img/home.png" alt="홈">HOME</a> </span>
+					<span><a href="#"><img src="img/drink.png" alt="메뉴">MENU</a></span>
+					<span><a href="#"><img src="img/auto.png" alt="주문">ORDER</a></span>
+					<span><a href="#"><img src="img/other.png" alt="더보기">OTHER</a></span>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
