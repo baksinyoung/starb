@@ -11,6 +11,7 @@
 		* {margin:0; padding:0; box-sizing:border-box;}
 		img {max-width:100%; }
 		#layout {	max-width:390px; margin:auto; height:844px;	position:relative; }
+		a {color:black; text-decoration:none;}
 		
 		::-webkit-scrollbar {
 			 width:1px; 
@@ -27,6 +28,41 @@
 		/*공통부분 */
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		ul {list-style:none; display:flex;}
+		li {flex:1; text-align:center; padding:10px 0px; border:1px solid #f1f0eb; }
+		
+	
+		
+		
+		.submenu { display:flex; height:30px; align-items:center; overflow:hidden;}
+		.submenu li {flex:1;   border:1px solid #f1f0eb;  }
+		 .submenu li a {margin-bottom:10px; font-size:0.8rem;}
+		 li:hover a {font-weight:bold;}
+		
+		
+		
+		
+		
+		.choice {background:#f1f0eb; }
+		.subcho, .subcho a {background:black; color:white;}
+		
+		
+		
+		main div {
+			border:1px solid red; text-align:center;
+			display:flex; padding:20px 50px; justify-content:center;
+			}
+		main div img {
+		width:20px; display:block; margin-right:10px;}
+		#fname {border:none;}
+		#line {border:1px solid black; padding:8px; border-radius:30px; }		
 		</style>
 		
 	</head>
@@ -35,45 +71,29 @@
 			<header>
 				<h3>MENU</h3>
 			</header>
-			
-			<!--네비게이션
 			<div>
 				<nav>
 					<ul>
-						<li>
-							<a href="#" class="m">음료</a>
-							<nav class="sm">
-								<a href="#">추천</a>
-								<a href="#">커피</a>
-								<a href="#">콜드브루</a>
-								<a href="#">프라푸치노</a>
-								<a href="#">블렌디드</a>
-							</nav>							
-							<li>
-							<a href="#" class="m">디저트</a>
-							<nav class="sm">
-								<a href="#">추천</a>
-								<a href="#">커피</a>
-								<a href="#">콜드브루</a>
-								<a href="#">프라푸치노</a>
-								<a href="#">블렌디드</a>
-							</nav>
-							<a href="#" class="m">상품</a>
-							<nav class="sm">
-								<a href="#">추천</a>
-								<a href="#">커피</a>
-								<a href="#">콜드브루</a>
-								<a href="#">프라푸치노</a>
-								<a href="#">블렌디드</a>
-							</nav>
-						</li>
+						<li class="choice"><a href="4.html">음료</a></li>
+						<li><a href="#" >디저트</a></li>
+						<li><a href="#" >상품</a></li>
+					</ul>
+					<ul class="submenu">
+						<li class="subcho"><a href="4.html" >커피</a></li>
+						<li><a href="4-1.html" >콜드브루</a></li>
+						<li><a href="4-2.html" >프라푸치노</a></li>
+						<li><a href="4-3.html">블렌디드</a></li>
 					</ul>
 				</nav>
 			</div>
-			-->
+			
+			
 			<main>
-				<div>
-					<img src="img/search.png" alt="search">
+				<div>	 
+					<div id="line">
+						<img src="img/search.png" alt="search">
+						<input type="text" id="fname" placeholder="아이스 아메리카노"></input>		
+					</div>
 				</div>
 			</main>
 			<footer>
